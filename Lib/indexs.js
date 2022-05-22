@@ -52,4 +52,22 @@ window.onload=function () {
 
     }
 
+
+     function reset() {
+        for (var i = 0; i < boundraies.length; i++) {
+
+            boundraies[i].classList.remove("youlose");
+
+            document.getElementsByClassName("boundary example")[0].innerHTML = 0;
+            score=0;
+
+        }
+
+
+    }
+
+    function cheat(){
+        document.getElementById("status").innerHTML="Dont Try to Cheat :p"
+    }
+
 }
