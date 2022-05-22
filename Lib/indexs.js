@@ -21,11 +21,35 @@ window.onload=function () {
             start.addEventListener("mouseenter", cheat);
 
 
-        }
-        ;
+        };
+    }
 
+    function lose() {
+
+        if (!boundraies[0].classList.contains("youlose"))  {
+         score -= 10};
+
+
+        for (var i = 0; i < boundraies.length; i++) {
+            boundraies[i].classList.add("youlose");
+        }
+
+
+        document.getElementById("status").innerHtml = "You Lose"
+        var result = document.getElementsByClassName("boundary example")[0];
+         result.innerHTML = score;
 
     }
 
+
+    function win() {
+                if(!boundraies[0].classList.contains("youlose")) {
+                    var winn = document.getElementById("status").innerHTML = "You Win"
+                    var resul = document.getElementsByClassName("boundary example")[0];
+                    score += 5;
+                    resul.innerHTML = score;
+                }
+
+    }
 
 }
