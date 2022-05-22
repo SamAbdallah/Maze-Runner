@@ -6,5 +6,26 @@ window.onload=function () {
     start.addEventListener("mouseenter", game);
     start.addEventListener("click", reset);
 
+    function game() {
+
+        for (var i = 0; i < boundraies.length; i++) {
+            boundraies[i].addEventListener("mouseenter", function (event) {
+                lose();
+                document.getElementById("status").innerHTML = "you lose"
+
+
+                var end = document.getElementById("end");
+
+            });
+            end.addEventListener("mouseenter", win);
+            start.addEventListener("mouseenter", cheat);
+
+
+        }
+        ;
+
+
+    }
+
 
 }
