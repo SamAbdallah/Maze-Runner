@@ -21,7 +21,7 @@ window.onload=function () {
 
     function game() {
 
-
+        last()
         startTimer()
 
         for (var i = 0; i < boundraies.length; i++) {
@@ -103,9 +103,6 @@ window.onload=function () {
     function cheat(){
         document.getElementById("status").innerHTML="Dont Try to Cheat :p"
     }
-
-
-
 
 
 
