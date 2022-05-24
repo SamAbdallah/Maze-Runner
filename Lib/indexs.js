@@ -19,6 +19,29 @@ window.onload=function () {
 
     let interval;
 
+    function game() {
+
+
+        startTimer()
+
+        for (var i = 0; i < boundraies.length; i++) {
+            boundraies[i].addEventListener("mouseenter", function (event) {
+                lose();
+                document.getElementById("status").innerHTML = "you lose"
+
+
+                var end = document.getElementById("end");
+
+            });
+            end.addEventListener("mouseenter", win);
+            start.addEventListener("mouseenter", cheat);
+
+            console.log("first",msS)
+            console.log("second",msS3)
+
+
+        };
+    }
 
 
 
