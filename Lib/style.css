@@ -48,6 +48,34 @@ div.boundary {
 	border: 1px solid black;
 }
 
+div.boundary2 {
+	background-color: white;
+
+}
+
+#main{
+	font-size: x-large;
+}
+
+
+
+div.boundary2.example {
+	margin:auto;
+	margin-top: 20px;
+	width: 100px;
+	height: 25px;
+}
+
+
+div.boundary3.example {
+	margin:auto;
+	margin-top: 20px;
+	width: 100px;
+	height: 25px;
+}
+
+
+
 div.boundary.example {
 	margin: auto;
 	width: 100px;
